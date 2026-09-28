@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bashir Curtain Shop – Wave Curtains in Riyadh</title>
+<meta name="description" content="Custom wave curtains, sheers and blackout curtains for homes and offices in Riyadh. Al Zahera Street. WhatsApp 0577853807.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#141210;--bg2:#1d1a16;--gold:#d4a640;--gold2:#f0d48a;--ink:#f3ede2;--mute:#b3a994;--line:rgba(212,166,64,.35)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Jost,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.05}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.gold{background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{position:sticky;top:0;z-index:10;background:rgba(20,18,16,.94);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+nav b{font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:var(--gold)}
+nav ul{display:flex;gap:20px;list-style:none;padding:0;font-size:.95rem}
+nav ul a{text-decoration:none;color:var(--mute)}nav ul a:hover{color:var(--gold2)}
+@media(max-width:700px){nav ul{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:500;border:1px solid var(--gold);cursor:pointer;font:inherit;font-weight:500;color:var(--ink);background:none;transition:background .2s}
+.btn.p{background:var(--gold);color:#1a1408}.btn.p:hover{background:var(--gold2)}
+.btn.s:hover{background:rgba(212,166,64,.15)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;background:#000}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,18,16,.96) 20%,rgba(20,18,16,.25))}
+.hero .wrap{position:relative;z-index:1;padding-top:60px;padding-bottom:60px}
+.hero h1{font-size:clamp(3.6rem,14vw,7.5rem)}
+.shop{font-family:"Cormorant Garamond",serif;font-size:clamp(1.1rem,3.4vw,1.6rem);color:var(--mute)}
+.wave{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;font-size:clamp(1.8rem,6vw,3rem);margin:18px 0 8px}
+.tag{color:var(--mute);max-width:42ch;margin-bottom:28px}
+.gline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+section{padding:76px 0}
+.alt{background:var(--bg2)}
+h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:12px}
+.lead{color:var(--mute);max-width:58ch;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));border-top:1px solid var(--line)}
+.item{padding:24px 22px 24px 0;border-bottom:1px solid var(--line)}
+.item h3{font-size:1.7rem;color:var(--gold)}
+.item p{color:var(--mute);margin-top:6px;font-size:.98rem}
+.split{display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));align-items:center}
+.frame{border:1px solid var(--gold);padding:8px;border-radius:4px}
+.frame img{width:100%;height:100%;object-fit:cover}
+.quote{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.15;border-left:3px solid var(--gold);padding-left:20px;margin-bottom:22px}
+.checks{list-style:none;padding:0}
+.checks li{padding:8px 0 8px 30px;position:relative;border-bottom:1px solid var(--line)}
+.checks li::before{content:"";position:absolute;left:4px;top:15px;width:14px;height:8px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+/* gallery */
+.gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.gal figure{position:relative;overflow:hidden;border:1px solid var(--line);cursor:zoom-in}
+.gal img{width:100%;height:280px;object-fit:cover;transition:transform .4s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 10px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:.95rem}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:20px;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-height:90vh;border:1px solid var(--gold)}
+/* fabrics */
+.sw{display:flex;flex-wrap:wrap;gap:14px}
+.sw div{width:96px;text-align:center;font-size:.85rem;color:var(--mute)}
+.sw i{display:block;height:64px;border-radius:50% 50% 6px 6px/40% 40% 6px 6px;border:1px solid var(--line);margin-bottom:6px;
+background:repeating-linear-gradient(90deg,var(--c) 0 10px,color-mix(in srgb,var(--c) 82%,#000) 10px 16px)}
+/* steps */
+.steps{list-style:none;padding:0;counter-reset:s}
+.steps li{counter-increment:s;padding:14px 0 14px 48px;position:relative;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s);position:absolute;left:0;top:12px;width:32px;height:32px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:.9rem}
+/* faq */
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mute);margin-top:10px;max-width:62ch}
+/* form */
+form{display:grid;gap:12px}
+label{font-size:.9rem;color:var(--mute);display:grid;gap:4px}
+input,select,textarea{font:inherit;color:var(--ink);background:#0f0d0b;border:1px solid var(--line);border-radius:6px;padding:12px}
+.row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+.map{border:1px solid var(--line);padding:26px;height:100%;display:grid;align-content:center;gap:10px}
+.num{font-family:"Cormorant Garamond",serif;font-size:clamp(2.2rem,8vw,3.4rem);font-weight:700;text-decoration:none}
+footer{padding:26px 0;text-align:center;color:var(--mute);font-size:.9rem;border-top:1px solid var(--line)}
+.wa{position:fixed;right:16px;bottom:16px;z-index:20;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+.wa svg{width:30px;height:30px;fill:#fff}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gal img{transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Bashir</b>
+<ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#fabrics">Fabrics</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn p" href="https://wa.me/966577853807" target="_blank" rel="noopener" style="padding:9px 18px">WhatsApp</a></div></nav>
+
+<header class="hero">
+<img src="images/room.jpg" alt="Beige wave curtains with white sheers in a modern living room">
+<div class="wrap">
+<h1 class="gold">Bashir</h1>
+<p class="shop">Maraz Athurlkhzam Curtain Shop</p>
+<p class="wave gold">Wave curtains, made for your space</p>
+<p class="tag">Modern, elegant and professional curtains for homes and offices in Riyadh.</p>
+<div class="btns"><a class="btn p" href="https://wa.me/966577853807?text=Hello%2C%20I%27d%20like%20a%20curtain%20quote" target="_blank" rel="noopener">Get a free quote</a>
+<a class="btn s" href="#gallery">See our work</a></div>
+</div></header>
+<div class="gline"></div>
+
+<section id="services"><div class="wrap">
+<h2>What we make</h2>
+<p class="lead">Every curtain is cut and sewn to your windows, so it hangs the way it should.</p>
+<div class="grid">
+<div class="item"><h3>Stylish curtains</h3><p>Layered sets in fabrics and colors that suit your room.</p></div>
+<div class="item"><h3>Wave system</h3><p>Soft, even folds along a slim track for a clean modern look.</p></div>
+<div class="item"><h3>Custom made</h3><p>Tailored to your exact window size and style.</p></div>
+<div class="item"><h3>Home &amp; office</h3><p>Living rooms, bedrooms, majlis, shops and workspaces.</p></div>
+<div class="item"><h3>Sheers</h3><p>Light, airy layers that soften daylight and keep privacy.</p></div>
+<div class="item"><h3>Blackout</h3><p>Heavy lined fabrics for bedrooms and cooler rooms.</p></div>
+<div class="item"><h3>Tracks &amp; rods</h3><p>Wave tracks, rods and fittings supplied and installed.</p></div>
+<div class="item"><h3>Installation</h3><p>Measuring at your place and neat hanging by our team.</p></div>
+</div></div></section>
+
+<section class="alt" id="wave"><div class="wrap split">
+<div class="frame"><img src="images/wave-detail.jpg" alt="Close-up of wave curtain folds on a slim track"></div>
+<div>
+<p class="quote">Better spaces. Beautiful lives.</p>
+<h2>Why wave curtains</h2>
+<ul class="checks">
+<li>Even, S-shaped folds from one end to the other</li>
+<li>Glide smoothly on a slim, quiet track</li>
+<li>Work with both sheer and heavy fabrics</li>
+<li>Clean modern finish with no visible hooks</li>
+</ul>
+</div></div></section>
+
+<section id="gallery"><div class="wrap">
+<h2>Our work</h2>
+<p class="lead">Tap a photo to enlarge. Send us your window photo on WhatsApp and we will suggest a style.</p>
+<div class="gal">
+<figure><img src="images/room.jpg" alt="Wave curtains with sheers"><figcaption>Wave curtains with white sheers</figcaption></figure>
+<figure><img src="images/wave-detail.jpg" alt="Wave fold detail"><figcaption>Wave system detail</figcaption></figure>
+</div>
+<p class="lead" style="margin-top:20px;font-size:.9rem">Add more photos: put them in the images folder and copy a &lt;figure&gt; line in index.html.</p>
+</div></section>
+
+<section class="alt" id="fabrics"><div class="wrap">
+<h2>Popular colors</h2>
+<p class="lead">A few favorites. We can show you more fabrics and samples in the shop.</p>
+<div class="sw">
+<div><i style="--c:#c9bfae"></i>Beige</div><div><i style="--c:#e9e4d8"></i>Ivory</div><div><i style="--c:#8f8a82"></i>Grey</div>
+<div><i style="--c:#3b3a3a"></i>Charcoal</div><div><i style="--c:#1e2a3d"></i>Navy</div><div><i style="--c:#5a6b52"></i>Olive</div>
+<div><i style="--c:#8c5a4a"></i>Brown</div><div><i style="--c:#c9a24a"></i>Gold</div>
+</div></div></section>
+
+<section id="process"><div class="wrap split">
+<div><h2>How it works</h2><p class="lead" style="margin-bottom:0">From first message to hanging, in four steps.</p></div>
+<ol class="steps">
+<li>Send us a message on WhatsApp or visit the shop.</li>
+<li>Choose your fabric, color and style.</li>
+<li>We measure your windows and make the curtains.</li>
+<li>We install them at your place.</li>
+</ol></div></section>
+
+<section class="alt" id="faq"><div class="wrap">
+<h2>Questions</h2>
+<details><summary>Do you measure at my home or office?</summary><p>Yes. Message us on WhatsApp with your location and we will arrange a visit.</p></details>
+<details><summary>Can I get sheer and blackout together?</summary><p>Yes. Many customers hang a sheer layer and a heavier curtain on a double track.</p></details>
+<details><summary>How long does it take?</summary><p>It depends on the fabric and size. Ask us on WhatsApp for the time for your order.</p></details>
+<details><summary>Do you make curtains for offices and shops?</summary><p>Yes, we make curtains for both homes and offices.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap split">
+<div>
+<h2>Request a quote</h2>
+<p class="lead">Fill this in and it opens WhatsApp with your message ready to send.</p>
+<form id="f">
+<div class="row"><label>Name<input id="n" required></label>
+<label>Place<select id="t"><option>Home</option><option>Office</option><option>Shop</option></select></label></div>
+<div class="row"><label>Style<select id="s"><option>Wave curtains</option><option>Sheers</option><option>Blackout</option><option>Not sure</option></select></label>
+<label>Number of windows<input id="w" type="number" min="1" value="1"></label></div>
+<label>Notes<textarea id="m" rows="3"></textarea></label>
+<button class="btn p" type="submit" style="justify-content:center">Send on WhatsApp</button>
+</form></div>
+<div class="map">
+<h3 class="gold" style="font-size:2rem">Visit the shop</h3>
+<p>Al Zahera Street, Riyadh</p>
+<a class="num gold" href="https://wa.me/966577853807" target="_blank" rel="noopener">0577 853 807</a>
+<div class="btns"><a class="btn s" href="https://maps.app.goo.gl/ndJspkigJ7QDXWU2A?g_st=awb" target="_blank" rel="noopener">Open in Google Maps</a></div>
+</div></div></section>
+
+<footer>© <span id="y"></span> Bashir Maraz Athurlkhzam Curtain Shop · Riyadh</footer>
+<a class="wa" href="https://wa.me/966577853807" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.900L3 29l6.300-2A13 13 0 1 0 16 3zm7.500 18.400c-.3.900-1.800 1.700-2.500 1.700-.6.100-1.400.100-2.300-.1-.5-.2-1.200-.4-2-.8-3.600-1.500-5.900-5.100-6.100-5.400-.2-.2-1.400-1.900-1.400-3.600s.9-2.500 1.200-2.900c.3-.4.700-.4.900-.4h.7c.2 0 .5-.1.800.6.300.7 1 2.400 1.100 2.600.1.200.1.400 0 .6-.1.200-.2.400-.4.600l-.6.700c-.2.200-.4.400-.2.800.2.400 1 1.600 2.100 2.600 1.400 1.200 2.600 1.600 3 1.800.4.200.6.100.8-.1.200-.3 1-1.100 1.300-1.500.3-.4.500-.3.900-.2l2.300 1.100c.4.200.6.300.7.500.1.100.1.900-.2 1.800z"/></svg></a>
+<div id="lb"><img alt=""></div>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gal img').forEach(i=>i.addEventListener('click',()=>{li.src=i.src;li.alt=i.alt;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();
+const g=id=>document.getElementById(id).value;
+const t=`Hello, I'm ${g('n')}. I'd like a quote for ${g('s')} for my ${g('t')} (${g('w')} windows). ${g('m')}`;
+window.open('https://wa.me/966577853807?text='+encodeURIComponent(t),'_blank');});
+</script>
+</body>
+</html>
